@@ -58,12 +58,12 @@ export const Card = () => {
               <div
                 key={index}
                 style={{ width: "320px", height: "300px" }}
-                className="max-w-md w-full h-52 md:w-64 md:h-80 m-4 p-6 transition duration-300 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                className="max-w-md w-full h-52 md:w-64 md:h-80 m-4 p-6 hover:scale-110 cursor-pointer transition duration-300 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
               >
                 <div className="px-3">
-                  <a href="#">
+                  <div>
                     <img src={item?.imgSrc} alt="No image" />
-                  </a>
+                  </div>
                 </div>
                 <div className="flex items-center pt-3">
                   <div className="px-3">
