@@ -6,6 +6,7 @@ export const Card = () => {
     {
       id: 1,
       name: "Chat App",
+      imgSrc: "../../../public/chatappp.png",
       lang: [
         {
           id: 1,
@@ -29,6 +30,7 @@ export const Card = () => {
     {
       id: 2,
       name: "Covid Api",
+      imgSrc: "../../../public/covid-api.png",
       lang: [
         {
           id: 1,
@@ -48,16 +50,21 @@ export const Card = () => {
   ];
 
   return (
-    <div className="w-full h-full transition duration-300 bg-white py-10 dark:bg-gray-800">
+    <div className="w-ful px-10 l h-full transition duration-300 bg-white py-10 dark:bg-gray-800">
       <div className="flex">
         {githubProjects &&
           githubProjects.map((item, index) => {
             return (
               <div
                 key={index}
-                style={{width: "320px", height: "200px"}}
+                style={{ width: "320px", height: "300px" }}
                 className="max-w-md w-full h-52 md:w-64 md:h-80 m-4 p-6 transition duration-300 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
               >
+                <div className="px-3">
+                  <a href="#">
+                    <img src={item?.imgSrc} alt="No image" />
+                  </a>
+                </div>
                 <div className="flex items-center pt-3">
                   <div className="px-3">
                     <a href="#">

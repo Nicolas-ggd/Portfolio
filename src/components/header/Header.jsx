@@ -4,7 +4,7 @@ import { Switcher } from "../../utils/Switcher";
 
 export const Header = () => {
   return (
-    <div className="flex py-6 flex-wrap transition duration-300 bg-white dark:bg-gray-800 justify-between items-center w-full">
+    <div className="flex py-6 px-10 flex-wrap transition duration-300 bg-white dark:bg-gray-800 justify-between items-center w-full">
       <div className="flex items-center px-4 lg:order-2">
         <Switcher />
       </div>
