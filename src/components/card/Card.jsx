@@ -7,6 +7,7 @@ export const Card = () => {
       id: 1,
       name: "Chat App",
       imgSrc: "../../../public/chatappp.png",
+      imgSrc2: "/public/chatappp.png",
       lang: [
         {
           id: 1,
@@ -31,6 +32,7 @@ export const Card = () => {
       id: 2,
       name: "Covid Api",
       imgSrc: "../../../public/covid-api.png",
+      imgSrc2: "/covid-api.png",
       lang: [
         {
           id: 1,
@@ -51,6 +53,7 @@ export const Card = () => {
       id: 2,
       name: "Movies Api",
       imgSrc: "../../../public/movieslist.png",
+      imgSrc2: "/movieslist.png",
       lang: [
         {
           id: 1,
@@ -74,7 +77,7 @@ export const Card = () => {
               >
                 <div className="px-3">
                   <div>
-                    <img src={item?.imgSrc ? item?.imgSrc : `https://nicolas-ggd.netlify.app${item?.imgSrc}`} alt="No image" />
+                    <img src={item?.imgSrc ? item?.imgSrc : `https://nicolas-ggd.netlify.app${item?.imgSrc2}`} alt="No image" />
                   </div>
                 </div>
                 <div className="flex items-center pt-3">
