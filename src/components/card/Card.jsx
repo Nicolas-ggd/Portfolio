@@ -5,7 +5,7 @@ export const Card = () => {
   const githubProjects = [
     {
       id: 1,
-      name: "Chat-App",
+      name: "Chat App",
       lang: [
         {
           id: 1,
@@ -28,7 +28,7 @@ export const Card = () => {
     },
     {
       id: 2,
-      name: "Covid-Api",
+      name: "Covid Api",
       lang: [
         {
           id: 1,
@@ -61,7 +61,7 @@ export const Card = () => {
                 <div className="flex items-center pt-3">
                   <div className="px-3">
                     <a href="#">
-                      <h5 className="mb-2 text-xl md:text-2xl font-bold transition duration-300 tracking-tight text-gray-900 dark:text-white">
+                      <h5 className="mb-2 text-xl md:text-2xl font-sans transition duration-300 tracking-tight text-gray-900 dark:text-white">
                         {item.name}
                       </h5>
                     </a>
@@ -79,7 +79,7 @@ export const Card = () => {
                   {item.lang.map((lang, langIndex) => (
                     <p
                       key={langIndex}
-                      className="border my-1 text-blue-800 text-xs px-2.5 transition duration-300 py-1.5 font-bold mr-2 px-2.5 rounded dark:text-white"
+                      className="border my-1 text-blue-800 text-xs px-2.5 transition duration-300 py-1.5 font-md mr-2 px-2.5 rounded dark:text-white"
                     >
                       {lang.name}
                     </p>

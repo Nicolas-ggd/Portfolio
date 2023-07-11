@@ -5,7 +5,9 @@ export const Home = () => {
   return (
     <div className="w-full h-full">
       <Content />
-      <Card />
+      <div className="px-10">
+        <Card />
+      </div>
     </div>
   );
 };
