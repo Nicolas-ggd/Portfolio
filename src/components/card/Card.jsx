@@ -77,7 +77,7 @@ export const Card = () => {
               >
                 <div className="px-3">
                   <div>
-                    <img src={item?.imgSrc ? item?.imgSrc : `https://nicolas-ggd.netlify.app${item?.imgSrc2}`} alt="No image" />
+                    <img src={`https://nicolas-ggd.netlify.app${item?.imgSrc2}`} alt="No image" />
                   </div>
                 </div>
                 <div className="flex items-center pt-3">
