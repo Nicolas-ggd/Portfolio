@@ -7,7 +7,7 @@ export const Card = () => {
       id: 1,
       name: "Chat App",
       imgSrc: "../../../public/chatappp.png",
-      imgSrc2: "/public/chatappp.png",
+      imgSrc2: "/chatappp.png",
       lang: [
         {
           id: 1,
