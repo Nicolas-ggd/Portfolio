@@ -47,6 +47,18 @@ export const Card = () => {
       ],
       githubLink: "https://github.com/Nicolas-ggd/covid19-api-vite-react",
     },
+    {
+      id: 2,
+      name: "Movies Api",
+      imgSrc: "../../../public/movieslist.png",
+      lang: [
+        {
+          id: 1,
+          name: "Next.JS",
+        },
+      ],
+      githubLink: "https://github.com/Nicolas-ggd/movies-app",
+    },
   ];
 
   return (
