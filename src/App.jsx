@@ -1,14 +1,22 @@
-import { Card } from "./components/card/Card";
-import { Content } from "./components/content/Content";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import { Home } from "./components/home/Home";
+import { About } from "./components/about/About";
+import { Projects } from "./components/projects/Projects";
 import { Header } from "./components/header/Header";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className="w-full h-full">
+    <Router>
       <Header />
-      <Content />
-      <Card />
-    </div>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/Projects" element={<Projects />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
