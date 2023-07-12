@@ -55,7 +55,7 @@ export const Header = () => {
         <div
           className={`${
             isMobileMenuOpen ? "fixed inset-0 z-999 bg-white" : "hidden"
-          } justify-between bg-gray-800 items-center w-full lg:flex lg:w-auto lg:order-1`}
+          } justify-between dark:bg-gray-800 items-center w-full lg:flex lg:w-auto lg:order-1`}
           id="mobile-menu-2"
         >
           <ul className="lg:flex p-5 flex-col mt-12 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
