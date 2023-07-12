@@ -65,30 +65,32 @@ export const Card = () => {
   ];
 
   return (
-    <div className="w-ful px-10 l h-full transition duration-300 bg-white py-10 dark:bg-gray-800">
-      <div className="flex">
-        {githubProjects &&
-          githubProjects.map((item, index) => {
-            return (
-              <div
-                key={index}
-                style={{ width: "320px", height: "300px" }}
-                className="max-w-md w-full h-52 md:w-64 md:h-80 m-4 p-6 hover:scale-110 cursor-pointer transition duration-300 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-              >
+    <div className="w-full px-5 sm:px-10 h-full transition duration-300 bg-white py-10 dark:bg-gray-800">
+      <div className="flex flex-wrap justify-center">
+        {githubProjects.map((item, index) => {
+          return (
+            <div
+              key={index}
+              style={{ width: "100%", maxWidth: "320px" }}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4"
+            >
+              <div className="max-w-md h-80 m-auto p-6 hover:scale-110 cursor-pointer transition duration-300 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div className="px-3">
-                  <div>
-                    <img src={`https://nicolas-ggd.netlify.app${item?.imgSrc2}`} alt="No image" />
-                  </div>
+                  <img
+                    src={`https://nicolas-ggd.netlify.app${item?.imgSrc2}`}
+                    alt="No image"
+                    className="mx-auto"
+                  />
                 </div>
                 <div className="flex items-center pt-3">
                   <div className="px-3">
-                    <a href="#">
-                      <h5 className="mb-2 text-xl md:text-2xl font-sans transition duration-300 tracking-tight text-gray-900 dark:text-white">
+                    <a href={item?.githubLink}>
+                      <h5 className="mb-2 text-lg md:text-xl font-sans transition duration-300 tracking-tight text-gray-900 dark:text-white">
                         {item.name}
                       </h5>
                     </a>
                   </div>
-                  <div className="px-8">
+                  <div className="px-8 flex">
                     <a className="px-2" href={item?.githubLink}>
                       <GitHubIcon className="dark:text-white" />
                     </a>
@@ -97,7 +99,7 @@ export const Card = () => {
                     </a>
                   </div>
                 </div>
-                <div className="flex flex-wrap mt-5">
+                <div className="flex flex-wrap my-5">
                   {item.lang.map((lang, langIndex) => (
                     <p
                       key={langIndex}
@@ -108,8 +110,9 @@ export const Card = () => {
                   ))}
                 </div>
               </div>
-            );
-          })}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
