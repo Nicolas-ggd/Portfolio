@@ -12,8 +12,7 @@ export const Header = () => {
   return (
     <div className="bg-white border-gray-200 px-4 transition duration-300 lg:px-6 py-3.5 dark:bg-gray-800">
       <div className="flex lg:justify-between items-center mx-auto max-w-screen-xl">
-        <div className="flex justify-center items-center lg:order-2 py-5">
-          <Switcher />
+        <div className="flex justify-start items-center lg:order-2 py-5">
           <button
             onClick={handleMobileMenuToggle}
             type="button"
@@ -80,6 +79,9 @@ export const Header = () => {
               </Link>
             </li>
           </ul>
+        </div>
+        <div className="flex w-full justify-end items-center lg:order-3">
+          <Switcher />
         </div>
       </div>
     </div>
