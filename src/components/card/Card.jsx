@@ -65,6 +65,7 @@ export const Card = () => {
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/movies-app",
+      webUrl: "https://nicolas-ggd-movies.netlify.app/"
     },
   ];
 
@@ -98,7 +99,7 @@ export const Card = () => {
                     <a className="px-2" href={item?.githubLink} target="_blank" rel="noopener noreferrer">
                       <GitHubIcon className="dark:text-white" />
                     </a>
-                    <a>
+                    <a className="px-2" href={item?.webUrl} target="_blank" rel="noopener noreferrer">
                       <LaunchIcon className="dark:text-white" />
                     </a>
                   </div>
