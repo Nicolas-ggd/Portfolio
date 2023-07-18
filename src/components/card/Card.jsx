@@ -46,8 +46,12 @@ export const Card = () => {
           id: 3,
           name: "Node.JS",
         },
+        {
+          id: 4,
+          name: "TypeScript"
+        }
       ],
-      githubLink: "https://github.com/Nicolas-ggd/covid19-api-vite-react",
+      githubLink: "https://github.com/Nicolas-ggd/covid-ts",
     },
     {
       id: 2,
@@ -91,7 +95,7 @@ export const Card = () => {
                     </a>
                   </div>
                   <div className="px-8 flex">
-                    <a className="px-2" href={item?.githubLink}>
+                    <a className="px-2" href={item?.githubLink} target="_blank" rel="noopener noreferrer">
                       <GitHubIcon className="dark:text-white" />
                     </a>
                     <a>
