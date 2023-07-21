@@ -6,8 +6,8 @@ export const Card = () => {
     {
       id: 1,
       name: "Chat App",
-      imgSrc: "../../../public/chatappp.png",
-      imgSrc2: "/chatappp.png",
+      imgSrc: "../../../public/chat.png",
+      imgSrc2: "/chat.png",
       lang: [
         {
           id: 1,
@@ -22,8 +22,12 @@ export const Card = () => {
           name: "Node.JS",
         },
         {
-          id: 1,
+          id: 4,
           name: "Socket.IO",
+        },
+        {
+          id: 5,
+          name: "MongoDB",
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/chat-app",
@@ -49,6 +53,10 @@ export const Card = () => {
         {
           id: 4,
           name: "TypeScript"
+        },
+        {
+          id: 5,
+          name: "MongoDB"
         }
       ],
       githubLink: "https://github.com/Nicolas-ggd/covid-ts",
@@ -66,6 +74,36 @@ export const Card = () => {
       ],
       githubLink: "https://github.com/Nicolas-ggd/movies-app",
       webUrl: "https://nicolas-ggd-movies.netlify.app/"
+    },
+    {
+      id: 2,
+      name: "Cooking Orders",
+      imgSrc: "../../../public/order.png",
+      imgSrc2: "/order.png",
+      lang: [
+        {
+          id: 1,
+          name: "React",
+        },
+        {
+          id: 2,
+          name: "Vite",
+        },
+        {
+          id: 3,
+          name: "Node.JS",
+        },
+        {
+          id: 4,
+          name: "MongoDB",
+        },
+        {
+          id: 5,
+          name: "TypeScript",
+        },
+      ],
+      githubLink: "https://github.com/Nicolas-ggd/restaurant-order",
+      // webUrl: "https://nicolas-ggd-movies.netlify.app/"
     },
   ];
 
