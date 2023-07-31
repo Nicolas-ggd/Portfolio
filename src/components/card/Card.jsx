@@ -29,8 +29,12 @@ export const Card = () => {
           id: 5,
           name: "MongoDB",
         },
+        {
+          id: 6,
+          name: "Redux",
+        },
       ],
-      githubLink: "https://github.com/Nicolas-ggd/chat-app",
+      githubLink: "https://github.com/Nicolas-ggd/chat",
     },
     {
       id: 2,
