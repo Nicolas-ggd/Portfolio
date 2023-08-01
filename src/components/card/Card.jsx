@@ -113,16 +113,11 @@ export const Card = () => {
       id: 5,
       name: "CLI (command-line interface)",
       imgSrc: "../../../public/cli.png",
-      imgSrc2: "/public/cli.png",
+      imgSrc2: "/cli.png",
       lang: [
         {
           id: 1,
           name: "Node.JS",
-        },
-        {
-          id: 2,
-          name: "Chulk",
-          package: "../../../public/npm.svg.png",
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/CLI",
@@ -181,13 +176,6 @@ export const Card = () => {
                       key={langIndex}
                       className="border my-1 text-blue-800 text-xs px-2.5 transition duration-300 py-1.5 font-md mr-2 px-2.5 rounded dark:text-white"
                     >
-                      {lang?.package && (
-                        <img
-                          src={`https://nicolas-ggd.netlify.app${lang?.package}`}
-                          alt="No image"
-                          className="mx-auto"
-                        />
-                      )}
                       {lang.name}
                     </p>
                   ))}
