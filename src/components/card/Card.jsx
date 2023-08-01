@@ -56,17 +56,17 @@ export const Card = () => {
         },
         {
           id: 4,
-          name: "TypeScript"
+          name: "TypeScript",
         },
         {
           id: 5,
-          name: "MongoDB"
-        }
+          name: "MongoDB",
+        },
       ],
       githubLink: "https://github.com/Nicolas-ggd/covid-ts",
     },
     {
-      id: 2,
+      id: 3,
       name: "Movies Api",
       imgSrc: "../../../public/movieslist.png",
       imgSrc2: "/movieslist.png",
@@ -77,10 +77,10 @@ export const Card = () => {
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/movies-app",
-      webUrl: "https://nicolas-ggd-movies.netlify.app/"
+      webUrl: "https://nicolas-ggd-movies.netlify.app/",
     },
     {
-      id: 2,
+      id: 4,
       name: "Cooking Orders",
       imgSrc: "../../../public/order.png",
       imgSrc2: "/order.png",
@@ -108,6 +108,25 @@ export const Card = () => {
       ],
       githubLink: "https://github.com/Nicolas-ggd/restaurant-order",
       // webUrl: "https://nicolas-ggd-movies.netlify.app/"
+    },
+    {
+      id: 5,
+      name: "CLI (command-line interface)",
+      imgSrc: "../../../public/cli.png",
+      imgSrc2: "/public/cli.png",
+      lang: [
+        {
+          id: 1,
+          name: "Node.JS",
+        },
+        {
+          id: 2,
+          name: "Chulk",
+          package: "../../../public/npm.svg.png",
+        },
+      ],
+      githubLink: "https://github.com/Nicolas-ggd/CLI",
+      webUrl: "https://www.npmjs.com/package/ggd-cli",
     },
   ];
 
@@ -138,10 +157,20 @@ export const Card = () => {
                     </a>
                   </div>
                   <div className="px-8 flex">
-                    <a className="px-2" href={item?.githubLink} target="_blank" rel="noopener noreferrer">
+                    <a
+                      className="px-2"
+                      href={item?.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <GitHubIcon className="dark:text-white" />
                     </a>
-                    <a className="px-2" href={item?.webUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      className="px-2"
+                      href={item?.webUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <LaunchIcon className="dark:text-white" />
                     </a>
                   </div>
@@ -152,6 +181,13 @@ export const Card = () => {
                       key={langIndex}
                       className="border my-1 text-blue-800 text-xs px-2.5 transition duration-300 py-1.5 font-md mr-2 px-2.5 rounded dark:text-white"
                     >
+                      {lang?.package && (
+                        <img
+                          src={`https://nicolas-ggd.netlify.app${lang?.package}`}
+                          alt="No image"
+                          className="mx-auto"
+                        />
+                      )}
                       {lang.name}
                     </p>
                   ))}
