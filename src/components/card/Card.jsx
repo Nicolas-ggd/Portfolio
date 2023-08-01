@@ -35,6 +35,7 @@ export const Card = () => {
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/chat",
+      webUrl: "https://nicolas-ggd-chat.netlify.app/",
     },
     {
       id: 2,
