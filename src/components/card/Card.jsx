@@ -108,7 +108,7 @@ export const Card = () => {
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/restaurant-order",
-      // webUrl: "https://nicolas-ggd-movies.netlify.app/"
+      webUrl: "https://order-ggd.netlify.app"
     },
     {
       id: 5,
