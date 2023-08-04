@@ -65,6 +65,7 @@ export const Card = () => {
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/covid-ts",
+      webUrl: "https://ggd-covid19.netlify.app/",
     },
     {
       id: 3,
