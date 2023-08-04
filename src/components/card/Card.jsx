@@ -1,7 +1,16 @@
+import { useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
 export const Card = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   const githubProjects = [
     {
       id: 1,
@@ -109,7 +118,7 @@ export const Card = () => {
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/restaurant-order",
-      webUrl: "https://order-ggd.netlify.app"
+      webUrl: "https://order-ggd.netlify.app",
     },
     {
       id: 5,
@@ -136,6 +145,7 @@ export const Card = () => {
               key={index}
               style={{ width: "100%", maxWidth: "320px" }}
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4"
+              data-aos="fade-up"
             >
               <div className="max-w-md h-80 m-auto p-6 hover:scale-110 cursor-pointer transition duration-300 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div className="px-3">
