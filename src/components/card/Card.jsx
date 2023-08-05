@@ -134,6 +134,28 @@ export const Card = () => {
       githubLink: "https://github.com/Nicolas-ggd/CLI",
       webUrl: "https://www.npmjs.com/package/ggd-cli",
     },
+    {
+      id: 6,
+      name: "Social platform authentication",
+      imgSrc: "../../../public/socialauth.png",
+      imgSrc2: "/socialauth.png",
+      lang: [
+        {
+          id: 1,
+          name: "Next.JS",
+        },
+        {
+          id: 2,
+          name: "NextAuth",
+        },
+        {
+          id: 3,
+          name: "TypeScript",
+        },
+      ],
+      githubLink: "https://github.com/Nicolas-ggd/social-platform-auth",
+      // webUrl: "https://nicolas-ggd-movies.netlify.app/",
+    },
   ];
 
   return (
