@@ -136,9 +136,9 @@ export const Card = () => {
     },
     {
       id: 6,
-      name: "Social platform authentication",
-      imgSrc: "../../../public/socialauth.png",
-      imgSrc2: "/socialauth.png",
+      name: "Social-Auth",
+      imgSrc: "../../../public/mobb.png",
+      imgSrc2: "/mobb.png",
       lang: [
         {
           id: 1,
