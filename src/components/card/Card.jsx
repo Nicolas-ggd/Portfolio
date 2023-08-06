@@ -154,7 +154,7 @@ export const Card = () => {
         },
       ],
       githubLink: "https://github.com/Nicolas-ggd/social-platform-auth",
-      // webUrl: "https://nicolas-ggd-movies.netlify.app/",
+      webUrl: "https://ggd-social-auth.netlify.app/",
     },
   ];
 
