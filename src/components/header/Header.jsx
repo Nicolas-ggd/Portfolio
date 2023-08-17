@@ -27,7 +27,9 @@ export const Header = () => {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className={`${isMobileMenuOpen ? "w-6 h-6" : "hidden"} z-50 absolute right-5 animate duration-300`}
+              className={`${
+                isMobileMenuOpen ? "w-6 h-6" : "hidden"
+              } z-50 absolute right-5 animate duration-300`}
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -85,9 +87,11 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        {!isMobileMenuOpen && <div className="flex w-full justify-end items-center lg:order-3">
-          <Switcher />
-        </div>}
+        {!isMobileMenuOpen && (
+          <div className="flex w-full justify-end items-center lg:order-3">
+            <Switcher />
+          </div>
+        )}
       </div>
     </div>
   );
