@@ -1,3 +1,5 @@
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+
 export const Content = () => {
   const scrollToBottom = () => {
     window.scrollTo({
@@ -7,12 +9,13 @@ export const Content = () => {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center items-center transition duration-300 dark:bg-gray-800">
+    <div className="w-full h-screen flex justify-center flex-col items-center transition duration-300 dark:bg-gray-800">
       <div className="p-5">
         <div className="w-full h-full">
           <div className="w-full flex justify-center items-center">
             <h1 className="text-3xl text-center text-dark dark:text-white font-semibold">
-              I'm Nika Gogitidze, web developer, concentrated on building web apps, with equal focus on design and functionality
+              I'm Nika Gogitidze, web developer, concentrated on building web
+              apps, with equal focus on design and functionality
             </h1>
           </div>
           <div className="flex justify-center items-center mt-5">
@@ -24,6 +27,9 @@ export const Content = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-10 bg-gray-700 rounded-full p-5 animate-bounce cursor-pointer" onClick={scrollToBottom}>
+        <ArrowDownwardIcon className="text-white" />
       </div>
     </div>
   );
