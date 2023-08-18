@@ -9,7 +9,7 @@ export const Content = () => {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center flex-col items-center transition duration-300 dark:bg-gray-800">
+    <div className="w-full lg:h-screen h-[80vh] flex justify-center flex-col items-center transition duration-300 dark:bg-gray-800">
       <div className="p-5">
         <div className="w-full h-full">
           <div className="w-full flex justify-center items-center">
@@ -28,7 +28,7 @@ export const Content = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-10 bg-gray-700 rounded-full p-5 animate-bounce cursor-pointer" onClick={scrollToBottom}>
+      <div className="absolute lg:bottom-10 bottom-20 bg-gray-700 rounded-full p-5 animate-bounce cursor-pointer" onClick={scrollToBottom}>
         <ArrowDownwardIcon className="text-white" />
       </div>
     </div>

@@ -15,7 +15,7 @@ export const Header = () => {
   }, [location]);
 
   return (
-    <div className="bg-white border-gray-200 px-4 transition duration-300 lg:px-6 py-6 dark:bg-gray-800">
+    <div className="bg-white border-gray-200 px-4 transition duration-300 lg:px-6 lg:py-6 dark:bg-gray-800">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl">
         <div
           className="justify-between bg-white dark:bg-gray-800 transition duration-300 items-center w-full lg:flex lg:w-auto lg:order-1"
