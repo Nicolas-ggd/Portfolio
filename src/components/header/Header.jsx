@@ -1,19 +1,7 @@
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Switcher } from "../../utils/Switcher";
 
 export const Header = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const location = useLocation();
-
-  const handleMobileMenuToggle = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [location]);
-
   return (
     <div className="bg-white border-gray-200 px-4 transition duration-300 lg:px-6 lg:py-6 dark:bg-gray-800">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl">
@@ -31,11 +19,9 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        {!isMobileMenuOpen && (
           <div className="flex justify-end items-center lg:order-3">
             <Switcher />
           </div>
-        )}
       </div>
     </div>
   );

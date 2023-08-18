@@ -28,7 +28,7 @@ export const Navigation = () => {
 
   return (
     <div className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen">
-      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 dark:bg-gray-700 py-5 bg-gray-200 h-[80px] xl:h-max text-3xl backdrop-blur-sm xl:rounded-full xl: px-5">
+      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 dark:bg-gray-700 py-10 bg-gray-200 h-[80px] xl:h-max text-3xl backdrop-blur-sm xl:rounded-full xl: px-5">
         {navigationData?.map((item, index) => {
           return (
             <Link
