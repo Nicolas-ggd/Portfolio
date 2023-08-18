@@ -64,31 +64,15 @@ export const Header = () => {
             <li>
               <Link
                 to="/"
-                className="block py-5 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block text-2xl py-5 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 transition duration-2"
               >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/projects"
-                className="block py-5 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className="block py-5 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                About
+                Nicolas-<span className="text-orange-400">ggd</span>
               </Link>
             </li>
           </ul>
         </div>
         {!isMobileMenuOpen && (
-          <div className="flex w-full justify-end items-center lg:order-3">
+          <div className="flex  justify-end items-center lg:order-3">
             <Switcher />
           </div>
         )}

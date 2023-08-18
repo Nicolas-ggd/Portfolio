@@ -180,7 +180,7 @@ export const Card = () => {
                 <div className="flex items-center pt-3">
                   <div className="px-3">
                     <a href={item?.githubLink}>
-                      <h5 className="mb-2 text-lg md:text-xl font-sans transition duration-300 tracking-tight text-gray-900 dark:text-white">
+                      <h5 className="mb-2 text-lg md:text-xl transition duration-300 tracking-tight text-gray-900 dark:text-white">
                         {item.name}
                       </h5>
                     </a>

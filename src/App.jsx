@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { Home } from "./components/home/Home";
@@ -21,11 +22,21 @@ function App() {
 
 function MainComponent() {
   const location = useLocation();
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    setIsTransitioning(true);
+    const transitionTimeout = setTimeout(() => {
+      setIsTransitioning(false);
+    }, 1000);
+
+    return () => clearTimeout(transitionTimeout);
+  }, [location]);
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div key={location.pathname} className="h-full">
-        <Transition />
+      <motion.div className="h-full" key={location}>
+        {isTransitioning && <Transition />}
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
