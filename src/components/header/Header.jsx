@@ -8,11 +8,11 @@ export const Header = () => {
         <div
           className="justify-between bg-white dark:bg-gray-800 transition duration-300 items-center w-full lg:flex lg:w-auto lg:order-1"
         >
-          <ul className="lg:flex p-5 flex-col  font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className="lg:flex p-5 flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
             <li>
               <Link
                 to="/"
-                className="block text-3xl py-5 pr-4 pl-3 text-white lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:hover:text-red-400 transition duration-2"
+                className="block text-3xl py-5 pr-4 pl-3 dark:text-white dark:text-gray-800 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:hover:text-red-400 transition duration-2"
               >
                 Nicolas-<span className="text-red-400">ggd</span>
               </Link>
