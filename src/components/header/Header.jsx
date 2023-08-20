@@ -3,10 +3,10 @@ import { Switcher } from "../../utils/Switcher";
 
 export const Header = () => {
   return (
-    <div className="bg-white border-gray-200 px-4 transition duration-300 lg:px-6 lg:py-6 dark:bg-gray-800">
+    <div className="bg-white border-gray-200 px-4 transition duration-300 lg:px-6 lg:py-6 dark:bg-black">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl">
         <div
-          className="justify-between bg-white dark:bg-gray-800 transition duration-300 items-center w-full lg:flex lg:w-auto lg:order-1"
+          className="justify-between bg-white dark:bg-black transition duration-300 items-center w-full lg:flex lg:w-auto lg:order-1"
         >
           <ul className="lg:flex p-5 flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
             <li>

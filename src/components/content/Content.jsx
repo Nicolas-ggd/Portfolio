@@ -9,7 +9,7 @@ export const Content = () => {
   };
 
   return (
-    <div className="w-full lg:h-screen h-[80vh] flex justify-center flex-col items-center transition duration-300 dark:bg-gray-800">
+    <div className="w-full lg:h-screen h-[80vh] flex justify-center flex-col items-center transition duration-300 dark:bg-black">
       <div className="p-5">
         <div className="w-full h-full">
           <div className="w-full flex justify-center items-center">

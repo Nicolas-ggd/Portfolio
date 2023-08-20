@@ -159,7 +159,7 @@ export const Card = () => {
   ];
 
   return (
-    <div className="w-full px-5 sm:px-10 h-full transition duration-300 bg-white py-10 dark:bg-gray-800">
+    <div className="w-full px-5 sm:px-10 h-full transition duration-300 bg-white py-10 dark:bg-black">
       <div className="flex flex-wrap justify-center">
         {githubProjects.map((item, index) => {
           return (
@@ -169,7 +169,7 @@ export const Card = () => {
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4"
               data-aos="fade-up"
             >
-              <div className="max-w-md h-80 m-auto p-6 hover:scale-110 hover:shadow-lg hover:shadow-gray-500/50 cursor-pointer transition duration-300 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div className="max-w-md h-80 m-auto p-6 hover:scale-110 hover:shadow-lg hover:shadow-gray-500/50 cursor-pointer transition duration-300 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700">
                 <div className="px-3">
                   <img
                     src={`https://nicolas-ggd.netlify.app${item?.imgSrc2}`}
