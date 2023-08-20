@@ -75,7 +75,7 @@ export const About = () => {
                       }}
                       className={`${
                         itemIndex === index
-                          ? "dark:text-red-400 text-red-400 after:w-[100%] after:bg-red-400 after:transition-all after:duration-300"
+                          ? "text-red-500 dark:text-red-500 after:w-[100%] after:bg-red-500 after:transition-all after:duration-300"
                           : ""
                       } dark:text-white cursor-pointer xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 mx-3 text-xl`}
                     >

@@ -34,7 +34,7 @@ export const Navigation = () => {
         {navigationData?.map((item, index) => {
           return (
             <Link
-              className={`text-dark dark:text-white transition-all duration-300 relative flex items-center group hover:dark:text-red-400 ${pathname === item?.path ? "dark:text-red-400 text-red-400" : ""}`}
+              className={`text-dark dark:text-white transition-all duration-300 relative flex items-center group hover:dark:text-red-400 ${pathname === item?.path ? "text-red-400 dark:text-red-500" : ""}`}
               key={index}
               to={item?.path}
               onClick={() => setActive(index)}
