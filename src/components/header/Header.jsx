@@ -12,7 +12,7 @@ export const Header = () => {
             <li>
               <Link
                 to="/"
-                className="block text-3xl py-5 pr-4 pl-3 dark:text-white lg:hover:bg-transparent lg:border-0 lg:p-0 text-transparent bg-clip-text bg-gradient-to-r dark:hover:from-green-400 dark:hover:to-teal-400 transition duration-2"
+                className="block text-3xl py-5 pr-4 text-gray-800 pl-3 dark:text-white lg:hover:bg-transparent lg:border-0 lg:p-0 text-transparent bg-clip-text bg-gradient-to-r dark:hover:from-green-400 dark:hover:to-teal-400 transition duration-2"
               >
                 Nicolas-<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">ggd</span>
               </Link>
