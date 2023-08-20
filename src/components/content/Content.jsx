@@ -21,7 +21,7 @@ export const Content = () => {
           </div>
           <div className="flex justify-center items-center mt-5">
             <button
-              className="bg-gray-500 transition duration-300 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full"
+              className="bg-green-400 shadow-lg hover:shadow-green-400/50 hover:bg-green-300 transition duration-300 font-bold py-2 px-4 rounded-full"
               onClick={scrollToBottom}
             >
               See my works
