@@ -12,9 +12,9 @@ export const Header = () => {
             <li>
               <Link
                 to="/"
-                className="block text-3xl py-5 pr-4 pl-3 dark:text-white dark:text-gray-800 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:hover:text-red-400 transition duration-2"
+                className="block text-3xl py-5 pr-4 pl-3 dark:text-white lg:hover:bg-transparent lg:border-0 lg:p-0 text-transparent bg-clip-text bg-gradient-to-r dark:hover:from-green-400 dark:hover:to-teal-400 transition duration-2"
               >
-                Nicolas-<span className="text-red-400">ggd</span>
+                Nicolas-<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">ggd</span>
               </Link>
             </li>
           </ul>

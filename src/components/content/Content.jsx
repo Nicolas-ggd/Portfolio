@@ -14,7 +14,7 @@ export const Content = () => {
         <div className="w-full h-full">
           <div className="w-full flex justify-center items-center">
             <h1 className="text-3xl text-center text-dark dark:text-white font-semibold">
-              I'm <span className="text-red-400">Nika Gogitidze</span>, web
+              I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">Nika Gogitidze</span>, web
               developer, concentrated on building web apps, with equal focus on
               design and functionality
             </h1>

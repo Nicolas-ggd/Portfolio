@@ -53,11 +53,11 @@ export const About = () => {
             <h2
               className="dark:text-white py-2 leading-10 lg:text-6xl text-3xl"
             >
-              Make it work, <span className="text-red-400">make it right</span>,
+              Make it work, <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">make it right</span>,
               make it fast.
             </h2>
             <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 xl:px-0 dark:text-white text-xl ml-0">
-              Hi, I'm <span className="text-red-400">Nika Gogitidze</span>, a
+              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">Nika Gogitidze</span>, a
               web developer from Tbilisi, Georgia. I'm passionate about creating
               web apps and seek to learn more
             </p>
