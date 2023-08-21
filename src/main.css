@@ -3,23 +3,3 @@
 * {
   font-family: 'Signika Negative', sans-serif;
 }
-
-.sligt-in {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #236b1d;
-  transform-origin: bottom;
-}
-
-.sligt-out {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #2d7e26;
-  transform-origin: top;
-}

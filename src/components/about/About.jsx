@@ -50,16 +50,20 @@ export const About = () => {
       >
         <div className="container mx-auto flex flex-col items-center xl:flex-row gap-x-6 h-full">
           <div className="flex-1 flex flex-col justify-center xl:w-[400px] mx-auto px-2">
-            <h2
-              className="dark:text-white py-2 leading-10 lg:text-6xl text-3xl"
-            >
-              Make it work, <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">make it right</span>,
-              make it fast.
+            <h2 className="dark:text-white py-2 leading-10 lg:text-6xl text-3xl">
+              Make it work,{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">
+                make it right
+              </span>
+              , make it fast.
             </h2>
             <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 xl:px-0 dark:text-white text-xl ml-0">
-              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">Nika Gogitidze</span>, a
-              web developer from Tbilisi, Georgia. I'm passionate about creating
-              web apps and seek to learn more
+              Hi, I'm{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">
+                Nika Gogitidze
+              </span>
+              , a web developer from Tbilisi, Georgia. I'm passionate about
+              creating web apps and seek to learn more
             </p>
           </div>
           <div className="flex flex-col w-full xl:max-w-[48%] h-[280px] items-center">
@@ -70,14 +74,11 @@ export const About = () => {
                     <div
                       key={itemIndex}
                       onClick={() => setIndex(itemIndex)}
-                      style={{
-                        borderColor: itemIndex === index ? "green" : "",
-                      }}
                       className={`${
                         itemIndex === index
-                          ? "text-green-400 dark:text-green-500 after:w-[100%] after:bg-green-400 after:transition-all after:duration-300"
+                          ? "text-green-400 dark:text-green-400 after:w-[100%] after:bg-green-400 after:transition-all after:duration-300"
                           : ""
-                      } dark:text-white cursor-pointer xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 mx-3 text-xl`}
+                      } dark:text-white text-dark cursor-pointer xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 mx-3 text-xl`}
                     >
                       {item?.title}
                     </div>
