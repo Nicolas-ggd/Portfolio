@@ -48,7 +48,7 @@ export const About = () => {
         className="w-full transition duration-300 dark:bg-black"
         style={{ height: "78vh" }}
       >
-        <div className="container mx-auto flex flex-col items-center xl:flex-row gap-x-6 h-full">
+        <div className="mx-auto max-w-screen-xl mx-auto flex flex-col items-center xl:flex-row gap-x-6 h-full">
           <div className="flex-1 flex flex-col justify-center xl:w-[400px] mx-auto px-2">
             <h2 className="dark:text-white py-2 leading-10 lg:text-6xl text-3xl">
               Make it work,{" "}
