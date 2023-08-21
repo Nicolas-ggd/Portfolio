@@ -159,7 +159,7 @@ export const Card = () => {
   ];
 
   return (
-    <div className="w-full px-5 sm:px-10 h-full transition duration-300 bg-white py-10 dark:bg-black">
+    <div className="w-full px-5 sm:px-10 h-full transition duration-300 py-10 bg-gray-200 dark:bg-black">
       <div className="flex flex-wrap justify-center">
         {githubProjects.map((item, index) => {
           return (
