@@ -45,7 +45,7 @@ export const About = () => {
   return (
     <>
       <div
-        className="w-full transition duration-300 dark:bg-black"
+        className="w-full transition duration-300 dark:bg-black bg-gray-200"
         style={{ height: "78vh" }}
       >
         <div className="mx-auto max-w-screen-xl mx-auto flex flex-col items-center xl:flex-row gap-x-6 h-full">

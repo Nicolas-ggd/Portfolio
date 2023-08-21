@@ -26,7 +26,7 @@ const projDescribe = [
 
 export const Guide = () => {
   return (
-    <div className="w-full h-full bg-black px-4">
+    <div className="w-full h-full bg-gray-200 dark:bg-black px-4">
       <div className="mx-auto max-w-screen-xl">
         <div className="px-2">
           <h1 className="text-5xl dark:text-white py-2">
