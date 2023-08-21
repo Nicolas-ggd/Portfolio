@@ -1,4 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const aboutData = [
   {
@@ -41,6 +44,10 @@ const aboutData = [
 
 export const About = () => {
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <>
@@ -88,7 +95,7 @@ export const About = () => {
               <div className="py-2 px-3 xl:overflow-scroll xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
                 {aboutData[index].info.map((item, itemIndex) => {
                   return (
-                    <div
+                    <div data-aos="fade-left"
                       key={itemIndex}
                       className="flex flex-col md:flex-row max-w-max gap-x-2 items-center md:items-start"
                     >
@@ -109,7 +116,7 @@ export const About = () => {
                       </div>
                       <div className="grid grid-rows-4 grid-flow-col gap-4 gap-x-4 py-2">
                         {item?.icons?.map((icon, iconIndex) => {
-                          return <div key={iconIndex}>{icon}</div>;
+                          return <div data-aos="fade-right" key={iconIndex}>{icon}</div>;
                         })}
                       </div>
                     </div>

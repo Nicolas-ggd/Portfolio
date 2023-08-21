@@ -1,3 +1,8 @@
+import { useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import StorageIcon from "@mui/icons-material/Storage";
 import DataUsageIcon from "@mui/icons-material/DataUsage";
 import BoltIcon from "@mui/icons-material/Bolt";
@@ -5,34 +10,49 @@ import BoltIcon from "@mui/icons-material/Bolt";
 const projDescribe = [
   {
     icon: (
-      <StorageIcon className="text-blue-500 rounded-lg shadow-xl shadow-blue-500/70" style={{ fontSize: "60px" }} />
+      <StorageIcon
+        className="text-blue-500 rounded-lg shadow-xl shadow-blue-500/70"
+        style={{ fontSize: "60px" }}
+      />
     ),
     title: "Relationship with the database",
     desc: "Explore the world of databases and understand how they play a crucial role in modern web development.",
   },
   {
     icon: (
-      <DataUsageIcon className="text-cyan-500 rounded-full shadow-xl shadow-cyan-500/70" style={{ fontSize: "60px" }} />
+      <DataUsageIcon
+        className="text-cyan-500 rounded-full shadow-xl shadow-cyan-500/70"
+        style={{ fontSize: "60px" }}
+      />
     ),
     title: "Data exchange",
     desc: "Unlock the power of data exchange to create dynamic and interactive web applications.",
   },
   {
-    icon: <BoltIcon className="text-green-500 rounded-xl shadow-xl shadow-green-500/70" style={{ fontSize: "60px" }} />,
+    icon: (
+      <BoltIcon
+        className="text-green-500 rounded-xl shadow-xl shadow-green-500/70"
+        style={{ fontSize: "60px" }}
+      />
+    ),
     title: "Used feature",
     desc: "Dive into the essential tools and components frequently utilized by React developers to build robust applications.",
   },
 ];
 
 export const Guide = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="w-full h-full bg-gray-200 dark:bg-black px-4">
       <div className="mx-auto max-w-screen-xl">
-        <div className="px-2">
+        <div data-aos="fade-right" className="px-2">
           <h1 className="text-5xl dark:text-white py-2">
             Used features,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">
-              To build 
+              To build
             </span>
             , Strong application.
           </h1>
@@ -46,6 +66,7 @@ export const Guide = () => {
             {projDescribe?.map((item, index) => {
               return (
                 <div
+                  data-aos="fade-right"
                   key={index}
                   className="w-full sm:w-1/1 md:w-1/1 lg:w-1/3 xl:w-2/6 p-4"
                 >
