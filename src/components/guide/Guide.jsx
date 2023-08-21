@@ -70,7 +70,7 @@ export const Guide = () => {
                   key={index}
                   className="w-full sm:w-1/1 md:w-1/1 lg:w-1/3 xl:w-2/6 p-4"
                 >
-                  <div className="max-w-md h-80 m-auto p-6 cursor-pointer transition duration-300 bg-white rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700">
+                  <div className="max-w-md h-80 m-auto p-6 cursor-pointer transition duration-300 bg-white rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700 hover:dark:bg-zinc-800 hover:darkshadow-lg hover:dark:shadow-white/90">
                     <div className="dark:text-white text-dark py-2 text-center h-[50%] flex items-center justify-center">
                       {item?.icon}
                     </div>

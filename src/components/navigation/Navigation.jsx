@@ -46,7 +46,7 @@ export const Navigation = () => {
                   </div>
                 </div>
               </div>
-              <div className={`${active === index ? "translate-y-[-10px]" : ""}`}>{item?.icon}</div>
+              <div>{item?.icon}</div>
             </Link>
           );
         })}
