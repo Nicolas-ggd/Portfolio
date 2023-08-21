@@ -3,12 +3,6 @@ import { Link } from "react-router-dom";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 export const Content = () => {
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div className="w-full lg:h-screen h-[80vh] flex justify-center flex-col items-center transition duration-300 bg-gray-200 dark:bg-black">
@@ -30,12 +24,6 @@ export const Content = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div
-        className="absolute lg:bottom-10 bottom-20 bg-gray-700 rounded-full p-5 animate-bounce cursor-pointer"
-        onClick={scrollToBottom}
-      >
-        <ArrowDownwardIcon className="text-white" />
       </div>
     </div>
   );
