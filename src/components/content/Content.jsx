@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 export const Content = () => {
@@ -20,12 +21,12 @@ export const Content = () => {
             </h1>
           </div>
           <div className="flex justify-center items-center mt-5">
-            <button
+            <Link
               className="bg-green-400 shadow-lg hover:shadow-green-400/50 hover:bg-green-300 transition duration-300 font-bold py-2 px-4 rounded-full"
-              onClick={scrollToBottom}
+              to="/projects"              
             >
               See my works
-            </button>
+            </Link>
           </div>
         </div>
       </div>
