@@ -72,6 +72,7 @@ export const About = () => {
               , a web developer from Tbilisi, Georgia. I'm passionate about
               creating web apps and seek to learn more
             </p>
+            <div className="neon-about"></div>
           </div>
           <div className="flex flex-col w-full xl:max-w-[48%] h-[280px] items-center">
             <div className="flex flex-col justify-center items-center gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">

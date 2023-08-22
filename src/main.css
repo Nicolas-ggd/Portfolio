@@ -19,6 +19,17 @@
   /* Animation for sliding */
 }
 
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.85));
+}
+
 .slider-reverse {
   display: flex;
   /* Display items in a row */
@@ -71,7 +82,7 @@
 }
 
 .text-neon {
-  box-shadow: 
+  box-shadow:
     40rem 40rem 40rem 40rem #246428,
     40px 40px 40px #67277a,
     80px 80px 80px #246428,
@@ -79,5 +90,32 @@
     100px 0 30px #6a297d,
     100px 0 30px #246428,
     0 0 35px #246428,
-    100px 0 30px #9744b0; /* Purple shadow on top */
+    100px 0 30px #9744b0;
+  /* Purple shadow on top */
+}
+
+.neon-about {
+  box-shadow:
+    40rem 40rem 40rem 40rem #293ca5,
+    40px 40px 40px #67277a,
+    80px 80px 80px #246428,
+    0 0 20px #246428,
+    100px 0 30px #6a297d,
+    100px 0 30px #246428,
+    0 0 35px #246428,
+    100px 0 30px #9744b0;
+  /* Purple shadow on top */
+}
+
+.neon-project {
+  box-shadow:
+    40rem 40rem 40rem 40rem #67277a,
+    40px 40px 40px #67277a,
+    80px 80px 80px #246428,
+    0 0 20px #246428,
+    100px 0 30px #6a297d,
+    100px 0 30px #246428,
+    0 0 35px #246428,
+    100px 0 30px #9744b0;
+  /* Purple shadow on top */
 }

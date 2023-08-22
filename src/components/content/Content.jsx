@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
-import DiamondIcon from "@mui/icons-material/Diamond";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 export const Content = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="w-full lg:h-screen h-[80vh] flex justify-center flex-col items-center transition duration-300 bg-gray-200 dark:bg-black">
-      <div className="p-5 mx-auto max-w-screen-xl">
+      <div data-aos="fade-right" className="p-5 mx-auto max-w-screen-xl">
         <div className="w-full h-full">
           <div className="xl:w-[60%] w-full flex justify-center items-center">
             <h1 className="text-5xl text-center xl:text-start text-dark dark:text-white font-semibold">

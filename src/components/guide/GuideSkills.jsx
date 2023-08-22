@@ -8,14 +8,17 @@ const usedFeatures = [
   <i className="devicon-typescript-plain colored text-4xl"></i>,
   <i className="devicon-react-original colored text-4xl"></i>,
   <i className="devicon-redux-original colored text-4xl"></i>,
-  <i className="devicon-nextjs-line colored text-4xl dark:text-white"></i>,
+  <i
+    className="devicon-nextjs-line colored text-4xl"
+    style={{ color: "white" }}
+  ></i>,
   <i className="devicon-nodejs-plain-wordmark colored text-4xl"></i>,
 ];
 
 const usedFeaturesClone = [
-  <i className="devicon-express-original text-4xl dark:text-white"></i>,
+  <i className="devicon-express-original text-4xl text-white"></i>,
   <i className="devicon-mongodb-plain-wordmark colored text-4xl"></i>,
-  <i className="devicon-socketio-original text-4xl dark:text-white"></i>,
+  <i className="devicon-socketio-original text-4xl text-white"></i>,
   <i className="devicon-tailwindcss-plain colored text-4xl"></i>,
   <i className="devicon-html5-plain-wordmark colored text-4xl"></i>,
   <i className="devicon-css3-plain-wordmark colored text-4xl"></i>,
@@ -37,11 +40,11 @@ export const GuideSkills = () => {
             which, I used
           </h1>
           <p className="py-2 text-2xl dark:text-gray-500 py-4">
-          I am always looking for something new to develop my skills
+            I am always looking for something new to develop my skills
           </p>
         </div>
         <div data-aos="fade-right" className="slider-container">
-          <div className="slider">
+          <div className="slider dark:bg-gradient-to-r dark:from-black">
             {usedFeatures?.map((item, index) => {
               return (
                 <>
@@ -65,7 +68,7 @@ export const GuideSkills = () => {
               );
             })}
           </div>
-          <div className="slider-reverse">
+          <div className="slider-reverse dark:bg-gradient-to-r dark:from-black">
             {usedFeaturesClone?.map((item, index) => {
               return (
                 <div className="slider-item" key={`${index}-keyof`}>
@@ -85,7 +88,7 @@ export const GuideSkills = () => {
               );
             })}
           </div>
-          <div className="slider bg-gradient-to-r from-black">
+          <div className="slider dark:bg-gradient-to-r dark:from-black">
             {usedFeatures?.map((item, index) => {
               return (
                 <>

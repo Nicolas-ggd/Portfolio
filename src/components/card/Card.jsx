@@ -226,6 +226,8 @@ export const Card = () => {
             );
           })}
         </div>
+        <div className="neon-project"></div>
+
       </div>
     </div>
   );
