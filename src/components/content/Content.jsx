@@ -7,8 +7,8 @@ export const Content = () => {
     <div className="w-full lg:h-screen h-[80vh] flex justify-center flex-col items-center transition duration-300 bg-gray-200 dark:bg-black">
       <div className="p-5 mx-auto max-w-screen-xl">
         <div className="w-full h-full">
-          <div className="w-[60%] flex justify-center items-center">
-            <h1 className="text-5xl text-start text-dark dark:text-white font-semibold">
+          <div className="xl:w-[60%] w-full flex justify-center items-center">
+            <h1 className="text-5xl text-center xl:text-start text-dark dark:text-white font-semibold">
               I'm{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">
                 Nika Gogitidze
@@ -18,7 +18,7 @@ export const Content = () => {
             </h1>
             <div className="text-neon"></div>
           </div>
-          <div className="flex justify-start items-center mt-5">
+          <div className="flex xl:justify-start justify-center items-center mt-5">
             <Link
               className="bg-green-400 shadow-lg hover:shadow-green-400/50 hover:bg-green-300 transition duration-300 font-bold py-2 px-4 rounded-full"
               to="/projects"
