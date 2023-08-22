@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 export const Content = () => {
   useEffect(() => {
     Aos.init();
@@ -27,11 +26,19 @@ export const Content = () => {
           </div>
           <div className="flex xl:justify-start justify-center items-center mt-5">
             <Link
-              className="bg-green-400 shadow-lg hover:shadow-green-400/50 hover:bg-green-300 transition duration-300 font-bold py-2 px-4 rounded-full"
+              className="mx-1 bg-green-400 shadow-lg hover:shadow-green-400/50 hover:bg-green-300 transition duration-300 font-bold py-2 px-4 rounded-full"
               to="/projects"
             >
               See my works
             </Link>
+            <a
+              className="mx-1 bg-gray-800 text-white shadow-lg hover:shadow-gray-400/50 hover:bg-gray-700 transition duration-300 font-bold py-2 px-4 rounded-full"
+              href="https://github.com/Nicolas-ggd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See my github
+            </a>
           </div>
         </div>
       </div>
