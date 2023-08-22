@@ -7,18 +7,23 @@
 .slider-container {
   overflow: hidden;
   width: 100%;
-  max-width: 100%; /* You can adjust this if needed */
+  max-width: 100%;
+  /* You can adjust this if needed */
 }
 
 /* CSS for the slider */
 .slider {
-  display: flex; /* Display items in a row */
-  animation: slide 30s linear infinite; /* Animation for sliding */
+  display: flex;
+  /* Display items in a row */
+  animation: slide 30s linear infinite;
+  /* Animation for sliding */
 }
 
 .slider-reverse {
-  display: flex; /* Display items in a row */
-  animation: slideReverse 30s linear infinite; /* Animation for sliding */
+  display: flex;
+  /* Display items in a row */
+  animation: slideReverse 30s linear infinite;
+  /* Animation for sliding */
 }
 
 /* Keyframes for sliding to the left */
@@ -26,6 +31,7 @@
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -36,6 +42,7 @@
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0%);
   }
@@ -43,10 +50,14 @@
 
 /* Style for each slide item */
 .slider-item {
-  width: 20%; /* Adjust the width of each slide as needed */
-  flex-shrink: 0; /* Prevent items from shrinking */
-  text-align: center; /* Center the content */
-  padding: 20px; /* Add spacing if needed */
+  width: 20%;
+  /* Adjust the width of each slide as needed */
+  flex-shrink: 0;
+  /* Prevent items from shrinking */
+  text-align: center;
+  /* Center the content */
+  padding: 20px;
+  /* Add spacing if needed */
 }
 
 .slider::before {
@@ -57,4 +68,16 @@
   content: "";
   z-index: 999;
   background: linear-gradient(rgba(20, 20, 20, 0.511), black);
+}
+
+.text-neon {
+  box-shadow: 
+    40rem 40rem 40rem 40rem #246428,
+    40px 40px 40px #67277a,
+    80px 80px 80px #246428,
+    0 0 20px #246428,
+    100px 0 30px #6a297d,
+    100px 0 30px #246428,
+    0 0 35px #246428,
+    100px 0 30px #9744b0; /* Purple shadow on top */
 }

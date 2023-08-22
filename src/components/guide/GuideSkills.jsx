@@ -34,7 +34,6 @@ export const GuideSkills = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">
               Features, Tools, Libraries{" "}
             </span>
-
             which, I used
           </h1>
           <p className="py-2 text-2xl dark:text-gray-500 py-4">
@@ -46,7 +45,7 @@ export const GuideSkills = () => {
             {usedFeatures?.map((item, index) => {
               return (
                 <>
-                  <div className="slider-item" key={index}>
+                  <div className="slider-item" key={`${index}-key`}>
                     <div className="xl:bg-gray-900 w-20 h-20 flex items-center justify-center rounded-md">
                       {item}
                     </div>
@@ -57,7 +56,7 @@ export const GuideSkills = () => {
             {usedFeatures?.map((item, index) => {
               return (
                 <>
-                  <div className="slider-item" key={index}>
+                  <div className="slider-item" key={`feature-${index}1`}>
                     <div className="xl:bg-gray-900 w-20 h-20 flex items-center justify-center rounded-md">
                       {item}
                     </div>
@@ -69,7 +68,7 @@ export const GuideSkills = () => {
           <div className="slider-reverse">
             {usedFeaturesClone?.map((item, index) => {
               return (
-                <div className="slider-item" key={index}>
+                <div className="slider-item" key={`${index}-keyof`}>
                   <div className="xl:bg-gray-900 w-20 h-20 flex items-center justify-center rounded-md">
                     {item}
                   </div>
@@ -78,7 +77,7 @@ export const GuideSkills = () => {
             })}
             {usedFeaturesClone?.map((item, index) => {
               return (
-                <div className="slider-item" key={index}>
+                <div className="slider-item" key={`feature-${index}`}>
                   <div className="xl:bg-gray-900 w-20 h-20 flex items-center justify-center rounded-md">
                     {item}
                   </div>
@@ -90,7 +89,7 @@ export const GuideSkills = () => {
             {usedFeatures?.map((item, index) => {
               return (
                 <>
-                  <div className="slider-item" key={index}>
+                  <div className="slider-item" key={`feature-${index}`}>
                     <div className="xl:bg-gray-900 w-20 h-20 flex items-center justify-center rounded-md">
                       {item}
                     </div>
@@ -101,7 +100,7 @@ export const GuideSkills = () => {
             {usedFeatures?.map((item, index) => {
               return (
                 <>
-                  <div className="slider-item" key={index}>
+                  <div className="slider-item" key={`${item.id}-${index}`}>
                     <div className="xl:bg-gray-900 w-20 h-20 flex items-center justify-center rounded-md">
                       {item}
                     </div>
