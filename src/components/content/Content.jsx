@@ -22,7 +22,6 @@ export const Content = () => {
               , web developer, concentrated on building web apps, with equal
               focus on design and functionality
             </h1>
-            <div className="text-neon"></div>
           </div>
           <div className="flex xl:justify-start justify-center items-center mt-5">
             <Link
